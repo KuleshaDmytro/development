@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="main_header">
+            <div class="header_position name"><a href="#"><div class="top1">Аптека 3і</div></a></div>
+            <div class="header_position test"><a href="#"><div class="top">Про 3і</div></a></div>
+            <div class="header_position test1"><a href="#"><div class="top">Технічна підтримка</div></a></div>
+            <div class="header_position test1"><a href="#"><div class="top">Увійти</div></a></div>
+        </div>
+    </header>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Зареєструвати нову установу</button> 
+  
+    <div id="id01" class="modal"> 
+  
+        <form class="modal-content animate" action="/action_page.php"> 
+            <div class="imgcontainer"> 
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">×</span> 
+            </div> 
+  
+            <div class="container"> 
+                <h1><b>Дані про керівника</b></h1>
+                <label><b>Прізвище</b></label> 
+                <input type="text" placeholder="Enter last name" name="lastName" required> 
+
+                <label><b>Ім'я</b></label> 
+                <input type="text" placeholder="Enter name" name="name" required> 
+
+                <label><b>По батькові</b></label> 
+                <input type="text" placeholder="Enter surename" name="surename" required> 
+
+                <label><b>Стать</b></label> 
+                <input type="text" placeholder="Select..." name="sex" required> 
+
+                <label><b>ІПН</b></label> 
+                <input type="text" placeholder="Enter ІПН" name="IPN" required> 
+
+                <label><b>Дата народження</b></label> <!--тут має бути календар-->
+                <input type="text" placeholder="Select..." name="birthday" required>     
+
+                <label><b>email</b></label> 
+                <input type="email" placeholder="Enter email" name="email" required> 
+
+                <div class="border_h2">
+                    <h2>Серія та номер паспорту або картки</h2>
+                </div>
+                 <!--  <div class="imgcontainer"> 
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">Видалити документ</span> 
+                </div> -->  
+
+                <label><b>Вид документа</b></label> 
+                <input type="text" placeholder="Select..." name="typeOfDocument" required> 
+
+                <label><b>Номер</b></label> 
+                <input type="text" placeholder="" name="number" required>
+                <p>наприклад, для паперового паспорта ВМ123123, для свідоцтва про народження 1ТП123123</p> 
+
+                <label><b>Ким видано</b></label> 
+                <input type="text" placeholder="" name="IssuedBy" required>
+
+                <label><b>Коли виданий</b></label> <!--тут має бути календар-->
+                <input type="text" placeholder="" name="whenIssued" required>
+                <!--додоти ще документ-->
+                
+                <div class="border_h2">
+                    <h2>Телефон</h2>
+                </div>
+                <!--видалити телефон-->
+
+                <label><b>Тип телефону</b></label> 
+                <input type="text" placeholder="" name="phoneType" required>
+
+                <label><b>Номер телефону</b></label> 
+                <input type="text" placeholder="" name="phoneNumber" required>
+            </div>
+                
+                
+                <button type="submit">Зберегти</button> 
+            </div> 
+        </form> 
+    </div> 
+  
+    <script src="main.js"></script> 
+</body>
+</html>

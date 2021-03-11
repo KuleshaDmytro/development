@@ -1,0 +1,186 @@
+/* header */
+*{
+    margin: 0;
+}   
+header{
+  background-color: rgb(85, 170, 255);
+  min-width: 100%;
+  width: 100%;
+  min-height: 3.5vw;
+  height: 3.5vw;
+}
+.main_header{
+  display: flex;
+  min-height: 100%;
+  height: 100%;
+}
+.header_position{
+  background-color: dodgerblue;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  display: inline-block;
+  min-height: 100%;
+}
+.header_position:hover{
+  transition: .1s ease-out;
+  transition-delay: 0.2s;
+  background-color:rgb(85, 170, 255);
+}
+a{
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.top{
+  width: inherit;
+  height: inherit ;
+  padding: 7% 10% 7% 10%;
+  color: rgb(230, 239, 255);
+  text-shadow:black 0 0 2px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.top1{
+  width: inherit;
+  height: inherit ;
+  padding: 5% 10% 5% 10%;
+  color: rgb(230, 239, 255);
+  text-shadow:black 0 0 2px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.name{
+    background-color:rgb(85, 170, 255);
+    width: 20%;
+  } 
+.test{
+  margin-left: 37.5%;
+  width: 14%;
+}
+.test1{
+  margin-left: 0.3%;
+  width: 14%;
+}
+ /*assign full width inputs*/ 
+ input[type=text]{ 
+     width: 100%; 
+     padding: 12px 20px; 
+     margin: 8px 0; 
+     display: inline-block; 
+     border: 1px solid #ccc; 
+     box-sizing: border-box; 
+ } 
+ input[type=email]{ 
+  width: 100%; 
+  padding: 12px 10px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+} 
+ 
+ /*set a style for the buttons*/ 
+ button {
+     font-size: 1w;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background-color: dodgerblue; 
+     color: white; 
+     padding: 14px 20px; 
+     margin: 8px 0; 
+     border: none; 
+     cursor: pointer; 
+     width: 100%; 
+ } 
+ 
+ /* set a hover effect for the button*/ 
+ button:hover { 
+     opacity: 0.8; 
+ }
+
+ /*set padding to the container*/ 
+ .container { 
+     padding: 16px; 
+ } 
+   
+ /*set the Modal background*/ 
+ .modal { 
+     display: none; 
+     position: fixed; 
+     z-index: 1; 
+     left: 0; 
+     top: 0; 
+     width: 100%; 
+     height: 100%; 
+     overflow: auto; 
+     background-color: rgb(0, 0, 0); 
+     background-color: rgba(0, 0, 0, 0.4); 
+     padding-top: 60px; 
+ } 
+ 
+ /*style the model content box*/ 
+ .modal-content { 
+     background-color: #fefefe; 
+     margin: 5% auto 15% auto; 
+     border: 1px solid #888; 
+     width: 80%; 
+ } 
+ 
+ /* add zoom animation*/ 
+ .animate { 
+     -webkit-animation: animatezoom 0.6s; 
+     animation: animatezoom 0.6s 
+ } 
+   
+ @-webkit-keyframes animatezoom { 
+     from { 
+         -webkit-transform: scale(0) 
+     } 
+     to { 
+         -webkit-transform: scale(1) 
+     } 
+ } 
+   
+ @keyframes animatezoom { 
+     from { 
+         transform: scale(0) 
+     } 
+     to { 
+         transform: scale() 
+     } 
+ } 
+   
+ @media screen and (max-width: 300px) { 
+     span.fname { 
+         display: block; 
+         float: none; 
+     } 
+     .cancelbtn { 
+         width: 100%; 
+     } 
+ } 
+ h1{
+    font-size: 1.5vw;
+    text-align: center;
+ }
+
+ h2{
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 1.5%;
+    border-bottom: 2px solid dodgerblue;
+    font-weight: normal; 
+    padding-bottom: 5px; 
+ }
+
+ .close{
+     margin-right: 1%;
+     cursor: pointer;
+     float: right;
+     font-size: 30px;
+ }
+ .border_h2{
+   padding: 0 35%;
+ }
+p{
+  color: rgb(104, 104, 104);
+  padding-bottom: 10px;
+}
